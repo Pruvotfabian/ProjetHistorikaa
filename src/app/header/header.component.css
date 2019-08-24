@@ -1,0 +1,129 @@
+.headerBis{
+    height: 150px;
+    width: 100%;
+}
+.header{
+    z-index: 10;
+    position: fixed;
+    height: 150px;
+    width: 100%;
+    background: white;
+    -webkit-box-shadow: 0px 12px 22px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 12px 22px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 12px 22px 0px rgba(0,0,0,0.75);
+}
+.MenuContent{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    display: none;
+}
+.head{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+.logo{
+    width: 30%;
+    align-items: center;
+    display: flex;
+}
+.imgLogo{
+    display: flex;
+    max-width: 100%;
+    max-height: 100%;
+    cursor: pointer;
+}
+
+.menu{
+    width: 65%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 5%;
+
+}
+.blockMenu{
+    z-index: 1;
+    transform: rotateZ(45deg);
+    height: 60px;
+    width: 60px;
+    background-color: #BB7654;
+    color:whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.blockMenu:hover{
+    background-color: rgba(187, 118, 84, 0.70);
+    transition: 0.5s;
+}
+p{
+    transform: rotateZ(-45deg);
+}
+.block{
+    position: absolute;
+    top: 0;
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 31% 0);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    right:100%;
+    background-color: #BB7654;
+    transition: 0.8s;
+}
+.block.active{
+    right: 0;
+    transition: 0.8s;
+}
+.blockMenuClose{
+    border: 1px solid;
+    z-index: 1;
+    transform: rotateZ(45deg);
+    height: 60px;
+    width: 60px;
+    background-color: whitesmoke;
+    color:#BB7654;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+    display: none;
+}
+.blockMenuClose:hover{
+    background-color: rgba(245, 245, 245, 0.70);
+    transition: 0.5s;
+}
+.blockMenuClose.active{
+    display: flex;
+}
+.blockMenu.active{
+    display: none;
+}
+.nav{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+}
+.navigation{
+    text-align: center;
+    color: whitesmoke;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%; 
+    cursor: pointer;
+    transition: 0.8s;
+    border-radius: 10px;
+}
+.navigation:hover{
+    background: whitesmoke;
+    color: #BB7654;
+    transition: 0.8s;
+}

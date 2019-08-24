@@ -1,0 +1,12 @@
+.footer{
+    margin-top: 16px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BB7654;
+    color: white;
+    font-family: 'Oswald';
+    font-size: 0.8em;
+    padding-top: 2px;
+}

@@ -1,0 +1,120 @@
+.back{
+    min-height: 100vh;
+    position: relative;
+
+  }
+.slide1{
+  background: url(../../assets/image-site/slider1.jpg);
+  display: none;
+  z-index: 4;
+}
+.slide1.active{
+  display: block;
+  opacity: 1;
+  animation: fondu 2s linear;
+}
+
+.slide2{
+  display: none;
+  background: url(../../assets/image-site/slider2.jpg);
+  z-index: 3;
+}
+.slide2.active{
+  display: block;
+  opacity: 1;
+  animation: fondu 2s linear;
+}
+.slide3{
+  display: none;
+  background: url(../../assets/image-site/slider3.jpg);
+  z-index: 2;
+}
+.slide3.active{
+  display: block;
+  opacity: 1;
+  animation: fondu 2s linear;
+}
+.slide4{
+  display: none;
+  background: url(../../assets/image-site/slider4.jpg);
+  z-index: 1;
+}
+.slide4.active{
+  display: block;
+  opacity: 1;
+  animation: fondu 2s linear;
+}
+  .button{
+    bottom: 3%;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .overlay h1 {
+    color: white;
+    padding: 16px;
+    border-radius: 50px;
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    opacity: 0.7;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 2em;
+  }
+  .overlay h1:last-child {
+    background: #BB7654;
+    box-shadow: 0 0 16px #000, 0 0 32px #000;
+  }
+  .overlay h1:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: 0.3s;
+  }
+.citation{
+
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title{
+  color: white;
+  font-family: "Oswald";
+  width: 50%;
+  padding: 16px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+.test{
+  background-size: cover;
+}
+.slide1b{
+  display: none;
+}
+.slide1b.active{
+  display: block;
+  animation: fondu 2s linear;
+}
+.slide2b{
+  display: none;
+}
+.slide2b.active{
+  display: block;
+  animation: fondu 2s linear;
+}
+.slide3b{
+  display: none;
+}
+.slide3b.active{
+  display: block;
+  animation: fondu 2s linear;
+}
+.slide4b{
+  display: none;
+}
+.slide4b.active{
+  display: block;
+  animation: fondu 2s linear;
+}

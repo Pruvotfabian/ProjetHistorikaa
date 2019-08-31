@@ -67,7 +67,7 @@ p{
 .block{
     position: absolute;
     top: 0;
-    clip-path: polygon(0 0, 0 100%, 100% 100%, 31% 0);
+    clip-path: polygon(0 0, 0 100%, 85% 100%, 70% 0);
     height: 100%;
     width: 100%;
     display: flex;
@@ -113,14 +113,13 @@ p{
 .navigation{
     text-align: center;
     color: whitesmoke;
-    height: 30px;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 20%; 
     cursor: pointer;
     transition: 0.8s;
-    border-radius: 10px;
 }
 .navigation:hover{
     background: whitesmoke;

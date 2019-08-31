@@ -16,4 +16,85 @@
     justify-content: center;
     align-items: center;
 }
+/* GM1 ARTICLE ET BOX */
+.GM1{
+    display: block;
+}
+.GM1.active{
+    display: none;
+}
+.GM1GB{
+    display: none;
+}
+.GM1GB.active{
+    display: flex;
+}
+.GM1CG{
+    display: none;
+}
+.GM1CG.active{
+    display: flex;
+}
+
+.GM1WV{
+    display: none;
+}
+.GM1WV.active{
+    display: flex;
+}
+.GM1HG{
+    display: none;
+}
+.GM1HG.active{
+    display: flex;
+}
+/* GM2 ARTICLE ET BOX */
+.GM2{
+    display: block;
+}
+.GM2.active{
+    display: none;
+}
+.GM2GB{
+    display: none;
+}
+.GM2GB.active{
+    display: flex;
+}
+.GM2CG{
+    display: none;
+}
+.GM2CG.active{
+    display: flex;
+}
+.GM2WV{
+    display: none;
+}
+.GM2WV.active{
+    display: flex;
+}
+.GM2HG{
+    display: none;
+}
+.GM2HG.active{
+    display: flex;
+}
+.GM2R{
+    display: none;
+}
+.GM2R.active{
+    display: flex;
+}
+.GM2P{
+    display: none;
+}
+.GM2P.active{
+    display: flex;
+}
+
+.img{
+    height: 260px;
+    width: 260px;
+    float: left;
+}
 

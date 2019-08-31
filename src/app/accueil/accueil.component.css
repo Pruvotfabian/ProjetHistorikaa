@@ -45,7 +45,7 @@
   animation: fondu 2s linear;
 }
   .button{
-    bottom: 3%;
+    bottom: 10%;
     position: absolute;
     width: 100%;
     display: flex;
@@ -65,7 +65,6 @@
   }
   .overlay h1:last-child {
     background: #BB7654;
-    box-shadow: 0 0 16px #000, 0 0 32px #000;
   }
   .overlay h1:hover{
     background-color: rgba(255, 255, 255, 0.3);

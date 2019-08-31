@@ -1,0 +1,22 @@
+<section class="back"></section>
+<div class="remplissage">
+  <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae quas, quo quia nihil porro itaque laborum adipisci maxime natus aliquid dignissimos, praesentium voluptas. Dignissimos recusandae soluta, ad quas quod repellendus.</div>
+<form  [formGroup]="form" (ngSubmit)="onSubmit()">
+  <div class="block">
+    <div class="forms">
+        <input class="input" type="text" placeholder="Nom *" formControlName="name">
+        <input id="email" class="input" type="email" placeholder="Email *" formControlName="email">
+        <textarea class="textarea" placeholder="Message *" formControlName="message"></textarea>
+        <div class="loi">
+          * Champs Obligatoire. Voir les <a routerLink="../mention">Mention Légales</a>
+        </div>
+
+        <button class="boutton" type="submit" [disabled]="form.invalid">- Envoyer -
+        </button>
+    </div>
+    <div *ngIf="submited" class="sucess"><h1>Message envoyé avec succés</h1></div>
+  </div>
+</form>
+
+</div>
+<app-footer></app-footer>

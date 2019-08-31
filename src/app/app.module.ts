@@ -4,6 +4,7 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { HttpClientModule } from '@angular/common/http';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { environment } from '../environments/environment';
@@ -15,6 +16,7 @@ import { Page404Component } from './page404/page404.component';
 import { ArticleComponent } from './article/article.component';
 import { NewComponent } from './new/new.component';
 import { ArticleViewComponent } from './article-view/article-view.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
@@ -26,11 +28,14 @@ import { ArticleViewComponent } from './article-view/article-view.component';
     Page404Component,
     ArticleComponent,
     NewComponent,
-    ArticleViewComponent
+    ArticleViewComponent,
+    ContactComponent
   ],
   imports: [
+    FormsModule,
+    ReactiveFormsModule,
     AngularFireDatabaseModule,
-    AngularFireModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
     HttpClientModule,
     AngularFontAwesomeModule,
     BrowserModule,

@@ -4,8 +4,8 @@
     top: 0;
     background: url(../../assets/image-site/fond.jpg);
     background-size: cover;
-    -webkit-animation: fondu 2s linear;
-    animation: fondu 2s linear;
+    -webkit-animation: fondu 4s linear;
+    animation: fondu 4s linear;
     width: 100%;
     z-index: -10;
   }
@@ -18,18 +18,25 @@
 .left{
     background: white;
 }
+.titre{
+    font-size: 2em;
+    color: white;
+    text-align: center;
+}
 .content{
     display: flex;
     align-items: center;
+    height: 70px;
     color: #BB7654;
     font-family: "Oswald";
 }
 .title{
+    height: 100%;
     text-align: center;
     width: 50%;
     display: flex;
+    align-items: center;
     justify-content: center;
-    padding: 16px;
     cursor: pointer;
     transition: 0.8s;
 }
@@ -61,7 +68,6 @@
     background: red;
 }
 .menuLeft{
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
     background: #BB7654;
     color: white;
     top: 0%;
@@ -77,7 +83,6 @@
     transition: 0.5s;
 }
 .menuLeftGM1{
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
     background: #BB7654;
     color: white;
     top: 0%;
@@ -93,7 +98,6 @@
     transition: 0.5s;
 }
 .menuLeftGM2{
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 80%);
     background: #BB7654;
     color: white;
     top: -120%;
@@ -109,7 +113,6 @@
     transition: 0.5s;
 }
 .menuLeftGuerreFroide{
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 80%);
     background: #BB7654;
     color: white;
     top: -120%;
@@ -147,4 +150,36 @@
     position: absolute;
     z-index: -1;
     width: 100%;
+}
+@media screen and
+(max-width: 510px){
+    .menuLeftGM1{
+        width: 100%;
+        left: -100%;
+        clip-path: none;
+        -webkit-clip-path: none;
+        height: 100%;
+    }
+    .menuLeftGM2{
+        width: 100%;
+        left: 0;
+        height: 100%;
+    }
+    .menuLeftGuerreFroide{
+        width: 100%;
+        left: 0;
+        height: 100%;
+    }
+    .menuLeft{
+        width: 100%;
+        right: -100%;
+        clip-path: none;
+        -webkit-clip-path: none;
+        height: 100%;
+    }
+    .menuLeft.active{
+        left: 0;
+    }
+
+
 }

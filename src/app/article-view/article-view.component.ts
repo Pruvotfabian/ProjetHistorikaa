@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-article-view',
@@ -10,6 +11,9 @@ export class ArticleViewComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    setTimeout(() => {
+      $('.articleBox').addClass('active');
+    }, 1000);
   }
 
 }

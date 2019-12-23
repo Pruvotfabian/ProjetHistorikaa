@@ -9,11 +9,7 @@
     width: 100%;
     z-index: -10;
   }
-  .remplissage{
-    height: 100vh;
-    width: 100%;
-    position: relative;
-}
+
 .position-texte{
     display: flex;
     justify-content: center;
@@ -58,10 +54,20 @@
     width: 100%;
     min-width: 100%;
     max-width: 100%;
-    height: 160px;
+    min-height: 160px;
+    max-height: 300px;
 }
 .boutton{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 1.5em;
+    color: #fff;
+    background-color: #BB7654;
+    width: 200px;
+    height: 45px;
+    clip-path: polygon(0 50%, 10% 30%, 10% 0, 90% 0, 90% 30%, 100% 50%, 90% 70%, 90% 100%, 10% 100%, 10% 70%);
     border: none;
+    cursor: pointer;
 }
 .loi{
     color: #fff;
@@ -71,13 +77,27 @@
     cursor: pointer;
 }
 .sucess{
-    width: 75%;
-    margin-top: 5%;
+    width: 35%;
+    margin: 5% 0;
     text-align: center;
-    background: #5cb85c;
-    border: 2px solid green;
-    color: green;
+    border: 2px solid ;
+    color: white;
     border-radius: 45px;
+}
+.title{
+    text-align: center;
+    width: 100%;
+    font-size: 3em;
+    margin: 3%;
+    color: white;
+}
+.text{
+    margin: 2%;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 1);
+    width: 80%;
+    text-align: center;
+    color: white;
+    font-size: 1.1em;
 }
 @media screen and
 (max-width: 460px){

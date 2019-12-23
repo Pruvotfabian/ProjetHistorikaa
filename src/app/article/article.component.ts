@@ -13,20 +13,32 @@ export class ArticleComponent implements OnInit {
   ngOnInit() {
     $(document).ready(function(){
       // MENUS
-      $('.monde').click(function(){
+      $('.World').click(function(){
         $('.menuLeft').toggleClass('active');
+        $('.menuLeftGuerreFroide').removeClass('active');
+        $('.menuLeftGM1').removeClass('active');
+        $('.menuLeftGM2').removeClass('active');
         
       });
-      $('.GuerreFroide').click(function(){
+      $('.ColdWar').click(function(){
         $('.menuLeftGuerreFroide').toggleClass('active');
+        $('.menuLeft').removeClass('active');
+        $('.menuLeftGM1').removeClass('active');
+        $('.menuLeftGM2').removeClass('active');
         
       });
-      $('.GM1').click(function(){
+      $('.WW1').click(function(){
         $('.menuLeftGM1').toggleClass('active');
+        $('.menuLeftGuerreFroide').removeClass('active');
+        $('.menuLeft').removeClass('active');
+        $('.menuLeftGM2').removeClass('active');
       
       });
-      $('.GM2').click(function(){
+      $('.WW2').click(function(){
         $('.menuLeftGM2').toggleClass('active');
+        $('.menuLeftGuerreFroide').removeClass('active');
+        $('.menuLeft').removeClass('active');
+        $('.menuLeftGM1').removeClass('active');
        
       });
 
@@ -225,6 +237,17 @@ export class ArticleComponent implements OnInit {
                 $('.menuLeftGM1').removeClass('active');
                 $('.menuLeftGM2').removeClass('active');
                 $('.GFGB').addClass('active');
+                // BLOCK ARTICLE
+                $('.GM1').addClass('active');
+                $('.GM2').addClass('active');
+                $('.GF').removeClass('active');
+                $('.W').addClass('active');
+                // ARTICLE
+                $('.GFGB').addClass('active');
+                $('.GFWV').removeClass('active');
+                $('.GFP').removeClass('active');
+                $('.GFCS').removeClass('active');
+                $('.GFESP').removeClass('active');
               });
             // WE & VEHI
             $('.WVGF').click(function(){
@@ -233,6 +256,17 @@ export class ArticleComponent implements OnInit {
               $('.menuLeftGM1').removeClass('active');
               $('.menuLeftGM2').removeClass('active');
               $('.GFWV').addClass('active');
+                  // BLOCK ARTICLE
+                  $('.GM1').addClass('active');
+                  $('.GM2').addClass('active');
+                  $('.GF').removeClass('active');
+                  $('.W').addClass('active');
+                // ARTICLE
+                $('.GFGB').removeClass('active');
+                $('.GFWV').addClass('active');
+                $('.GFP').removeClass('active');
+                $('.GFCS').removeClass('active');
+                $('.GFESP').removeClass('active');
             });
             // Cour SPA
             $('.CSGF').click(function(){
@@ -241,6 +275,17 @@ export class ArticleComponent implements OnInit {
               $('.menuLeftGM1').removeClass('active');
               $('.menuLeftGM2').removeClass('active');
               $('.GFCS').addClass('active');
+              // BLOCK ARTICLE
+              $('.GM1').addClass('active');
+              $('.GM2').addClass('active');
+              $('.GF').removeClass('active');
+              $('.W').addClass('active');
+                // ARTICLE
+                $('.GFGB').removeClass('active');
+                $('.GFWV').removeClass('active');
+                $('.GFP').removeClass('active');
+                $('.GFCS').addClass('active');
+                $('.GFESP').removeClass('active');
             });
             // Prop
             $('.PGF').click(function(){
@@ -249,6 +294,17 @@ export class ArticleComponent implements OnInit {
               $('.menuLeftGM1').removeClass('active');
               $('.menuLeftGM2').removeClass('active');
               $('.GFP').addClass('active');
+              // BLOCK ARTICLE
+              $('.GM1').addClass('active');
+              $('.GM2').addClass('active');
+              $('.GF').removeClass('active');
+              $('.W').addClass('active');
+                // ARTICLE
+                $('.GFGB').removeClass('active');
+                $('.GFWV').removeClass('active');
+                $('.GFP').addClass('active');
+                $('.GFCS').removeClass('active');
+                $('.GFESP').removeClass('active');
             });
              // CIA VS KGB
              $('.CIAGF').click(function(){
@@ -256,7 +312,17 @@ export class ArticleComponent implements OnInit {
               $('.menuLeftGuerreFroide').removeClass('active');
               $('.menuLeftGM1').removeClass('active');
               $('.menuLeftGM2').removeClass('active');
-              $('.GFCIA').addClass('active');
+              // BLOCK ARTICLE
+              $('.GM1').addClass('active');
+              $('.GM2').addClass('active');
+              $('.GF').removeClass('active');
+              $('.W').addClass('active');
+                // ARTICLE
+                $('.GFGB').removeClass('active');
+                $('.GFWV').removeClass('active');
+                $('.GFP').removeClass('active');
+                $('.GFCS').removeClass('active');
+                $('.GFESP').addClass('active');
             });
 
       // MENU MONDE
@@ -267,6 +333,19 @@ export class ArticleComponent implements OnInit {
       $('.menuLeftGM1').removeClass('active');
       $('.menuLeftGM2').removeClass('active');
       $('.WEUR').addClass('active');
+        // BLOCK ARTICLE
+        $('.GM1').addClass('active');
+        $('.GM2').addClass('active');
+        $('.GF').addClass('active');
+        $('.W').removeClass('active');
+        // ARTICLE
+        $('.EUROPA').addClass('active');
+        $('.ASIA').removeClass('active');
+        $('.OCEANIA').removeClass('active');
+        $('.ORIENT').removeClass('active');
+        $('.AFRIKA').removeClass('active');
+        $('.NAMERIKA').removeClass('active');
+        $('.SAMERIKA').removeClass('active');
     });
     // ASIA
     $('.ASIA').click(function(){
@@ -275,6 +354,19 @@ export class ArticleComponent implements OnInit {
       $('.menuLeftGM1').removeClass('active');
       $('.menuLeftGM2').removeClass('active');
       $('.WASIA').addClass('active');
+              // BLOCK ARTICLE
+              $('.GM1').addClass('active');
+              $('.GM2').addClass('active');
+              $('.GF').addClass('active');
+              $('.W').removeClass('active');
+               // ARTICLE
+        $('.EUROPA').removeClass('active');
+        $('.ASIA').addClass('active');
+        $('.OCEANIA').removeClass('active');
+        $('.ORIENT').removeClass('active');
+        $('.AFRIKA').removeClass('active');
+        $('.NAMERIKA').removeClass('active');
+        $('.SAMERIKA').removeClass('active');
     });
      // OCEANIA
      $('.OCEANIA').click(function(){
@@ -283,6 +375,19 @@ export class ArticleComponent implements OnInit {
       $('.menuLeftGM1').removeClass('active');
       $('.menuLeftGM2').removeClass('active');
       $('.WOCE').addClass('active');
+              // BLOCK ARTICLE
+              $('.GM1').addClass('active');
+              $('.GM2').addClass('active');
+              $('.GF').addClass('active');
+              $('.W').removeClass('active');
+               // ARTICLE
+        $('.EUROPA').removeClass('active');
+        $('.ASIA').removeClass('active');
+        $('.OCEANIA').addClass('active');
+        $('.ORIENT').removeClass('active');
+        $('.AFRIKA').removeClass('active');
+        $('.NAMERIKA').removeClass('active');
+        $('.SAMERIKA').removeClass('active');
     });
        // ORIENT
        $('.ORIENT').click(function(){
@@ -291,6 +396,19 @@ export class ArticleComponent implements OnInit {
         $('.menuLeftGM1').removeClass('active');
         $('.menuLeftGM2').removeClass('active');
         $('.WORI').addClass('active');
+                // BLOCK ARTICLE
+                $('.GM1').addClass('active');
+                $('.GM2').addClass('active');
+                $('.GF').addClass('active');
+                $('.W').removeClass('active');
+                 // ARTICLE
+        $('.EUROPA').removeClass('active');
+        $('.ASIA').removeClass('active');
+        $('.OCEANIA').removeClass('active');
+        $('.ORIENT').addClass('active');
+        $('.AFRIKA').removeClass('active');
+        $('.NAMERIKA').removeClass('active');
+        $('.SAMERIKA').removeClass('active');
       });
     //  AFRIKA
      $('.AFRIKA').click(function(){
@@ -299,6 +417,19 @@ export class ArticleComponent implements OnInit {
       $('.menuLeftGM1').removeClass('active');
       $('.menuLeftGM2').removeClass('active');
       $('.WAFRI').addClass('active');
+        // BLOCK ARTICLE
+      $('.GM1').addClass('active');
+      $('.GM2').addClass('active');
+      $('.GF').addClass('active');
+      $('.W').removeClass('active');
+       // ARTICLE
+       $('.EUROPA').removeClass('active');
+       $('.ASIA').removeClass('active');
+       $('.OCEANIA').removeClass('active');
+       $('.ORIENT').removeClass('active');
+       $('.AFRIKA').addClass('active');
+       $('.NAMERIKA').removeClass('active');
+       $('.SAMERIKA').removeClass('active');
     });
      //  NORTH AMERIKA
      $('.NAMERIKA').click(function(){
@@ -307,6 +438,19 @@ export class ArticleComponent implements OnInit {
       $('.menuLeftGM1').removeClass('active');
       $('.menuLeftGM2').removeClass('active');
       $('.WUS').addClass('active');
+      // BLOCK ARTICLE
+      $('.GM1').addClass('active');
+      $('.GM2').addClass('active');
+      $('.GF').addClass('active');
+      $('.W').removeClass('active');
+       // ARTICLE
+       $('.EUROPA').removeClass('active');
+       $('.ASIA').removeClass('active');
+       $('.OCEANIA').removeClass('active');
+       $('.ORIENT').removeClass('active');
+       $('.AFRIKA').removeClass('active');
+       $('.NAMERIKA').addClass('active');
+       $('.SAMERIKA').removeClass('active');
     });
          //  SOUTH AMERIKA
          $('.SAMERIKA').click(function(){
@@ -315,6 +459,19 @@ export class ArticleComponent implements OnInit {
           $('.menuLeftGM1').removeClass('active');
           $('.menuLeftGM2').removeClass('active');
           $('.WBRE').addClass('active');
+                  // BLOCK ARTICLE
+        $('.GM1').addClass('active');
+        $('.GM2').addClass('active');
+        $('.GF').addClass('active');
+        $('.W').removeClass('active');
+         // ARTICLE
+         $('.EUROPA').removeClass('active');
+         $('.ASIA').removeClass('active');
+         $('.OCEANIA').removeClass('active');
+         $('.ORIENT').removeClass('active');
+         $('.AFRIKA').removeClass('active');
+         $('.NAMERIKA').removeClass('active');
+         $('.SAMERIKA').addClass('active');
         });
     });
   }

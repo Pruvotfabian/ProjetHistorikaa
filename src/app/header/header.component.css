@@ -2,6 +2,18 @@
     height: 150px;
     width: 100%;
 }
+.a{
+    text-decoration: none;
+    text-align: center;
+    color: whitesmoke;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%; 
+    cursor: pointer;
+    transition: 0.8s;
+}
 .header{
     z-index: 10;
     position: fixed;
@@ -46,6 +58,7 @@
 }
 .blockMenu{
     z-index: 1;
+    overflow-y:hidden;
     transform: rotateZ(45deg);
     height: 60px;
     width: 60px;
@@ -67,7 +80,8 @@ p{
 .block{
     position: absolute;
     top: 0;
-    clip-path: polygon(0 0, 0 100%, 85% 100%, 70% 0);
+    -webkit-clip-path: polygon(0% 0%, 0 100%, 85% 100%, 85% 50%, 70% 0);
+    clip-path: polygon(0% 0%, 0 100%, 85% 100%, 85% 50%, 70% 0);
     height: 100%;
     width: 100%;
     display: flex;
@@ -80,6 +94,7 @@ p{
     transition: 0.8s;
 }
 .blockMenuClose{
+    overflow-y:hidden;
     border: 1px solid;
     z-index: 1;
     transform: rotateZ(45deg);
@@ -125,4 +140,25 @@ p{
     background: whitesmoke;
     color: #BB7654;
     transition: 0.8s;
+}
+.a:hover{
+    background: whitesmoke;
+    color: #BB7654;
+    transition: 0.8s;
+}
+@media screen and
+(max-width: 510px){
+    .block{
+        -webkit-clip-path: none;
+        clip-path: none;
+    }
+  .nav{ 
+      width: 75%;
+  }
+  .x{
+      display: none;
+  }
+  .logo{
+      width: 80%;
+  }
 }

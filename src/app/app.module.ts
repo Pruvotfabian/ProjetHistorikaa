@@ -17,6 +17,8 @@ import { ArticleComponent } from './article/article.component';
 import { NewComponent } from './new/new.component';
 import { ArticleViewComponent } from './article-view/article-view.component';
 import { ContactComponent } from './contact/contact.component';
+import { MentionComponent } from './mention/mention.component';
+import { AucunarticlesComponent } from './articlesList/aucunarticles/aucunarticles.component';
 
 
 @NgModule({
@@ -29,7 +31,9 @@ import { ContactComponent } from './contact/contact.component';
     ArticleComponent,
     NewComponent,
     ArticleViewComponent,
-    ContactComponent
+    ContactComponent,
+    MentionComponent,
+    AucunarticlesComponent
   ],
   imports: [
     FormsModule,

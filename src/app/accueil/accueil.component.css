@@ -1,53 +1,62 @@
 .back{
     min-height: 100vh;
     position: relative;
+    animation: fondu 3s linear;
+}
 
-  }
-.slide1{
+/* .slide1{
   background: url(../../assets/image-site/slider1.jpg);
   display: none;
   z-index: 4;
-  animation: fondu 2s linear;
+  left: -100%;
+  animation: fondu 3s linear;
 }
 .slide1.active{
   display: block;
   opacity: 1;
-  animation: fondu 2s linear;
-}
-
+  left: 0;
+  animation: fondu 3s linear;
+} */
+/* 
 .slide2{
   display: none;
   background: url(../../assets/image-site/slider2.jpg);
   z-index: 3;
-  animation: fondu 2s linear;
+  left: -100%;
+  animation: fondu 3s linear;
 }
 .slide2.active{
   display: block;
   opacity: 1;
-  animation: fondu 2s linear;
+  left: 0;
+  animation: fondu 3s linear;
 }
 .slide3{
   display: none;
   background: url(../../assets/image-site/slider3.jpg);
   z-index: 2;
-  animation: fondu 2s linear;
+  left: -100%;
+  animation: fondu 3s linear;
 }
 .slide3.active{
   display: block;
   opacity: 1;
-  animation: fondu 2s linear;
+  left: 0;
+  animation: fondu 3s linear;
 }
 .slide4{
   display: none;
   background: url(../../assets/image-site/slider4.jpg);
   z-index: 1;
-  animation: fondu 2s linear;
+  left: -100%;
+  animation: fondu 3s linear;
 }
 .slide4.active{
   display: block;
   opacity: 1;
-  animation: fondu 2s linear;
-}
+  left: 0;
+  animation: fondu 3s linear;
+} */
   .button{
     bottom: 10%;
     position: absolute;
@@ -75,11 +84,14 @@
     transition: 0.3s;
   }
 .citation{
-
+  position: absolute;
+  top: 0;
   min-height: 100vh;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+ 
 }
 .title{
   color: white;
@@ -91,33 +103,39 @@
 }
 
 .test{
+  width: 100%;
   background-size: cover;
 }
 .slide1b{
   display: none;
 }
 .slide1b.active{
-  display: block;
+  display: flex;
   animation: fondu 2s linear;
+  flex-direction: column;
 }
 .slide2b{
   display: none;
 }
 .slide2b.active{
-  display: block;
+  display: flex;
   animation: fondu 2s linear;
+  flex-direction: column;
 }
 .slide3b{
   display: none;
 }
 .slide3b.active{
-  display: block;
+  display: flex;
   animation: fondu 2s linear;
+  flex-direction: column;
 }
 .slide4b{
   display: none;
 }
 .slide4b.active{
-  display: block;
+  display: flex;
   animation: fondu 2s linear;
+  flex-direction: column;
+
 }

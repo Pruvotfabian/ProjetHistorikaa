@@ -1,0 +1,96 @@
+.content{
+    flex-direction: column;
+}
+.articleBox{
+    padding: 16px;
+    background: rgba(0, 0, 0, 0.65);
+    border-radius: 25px;
+    height: auto;
+    width: 75%;
+    left: 0;
+    position: relative;
+    color: white;
+    z-index: -2;
+}
+/* .articleBox.active{
+    left: 0;
+    transition: 2s;
+} */
+.box{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+.title{
+    font-size: 2em;
+}
+/* GM1 ARTICLE ET BOX */
+.GM1{
+    display: block;
+}
+.GM1.active{
+    display: none;
+}
+.GM1GB{
+    display: none;
+}
+.GM1GB.active{
+    display: flex;
+}
+.GM1CG{
+    display: none;
+}
+.GM1CG.active{
+    display: flex;
+}
+
+.GM1WV{
+    display: none;
+}
+.GM1WV.active{
+    display: flex;
+}
+.GM1HG{
+    display: none;
+}
+.GM1HG.active{
+    display: flex;
+}
+
+
+.img{
+    margin-right: 2%;
+    float: left;
+}
+
+.buttone{
+    margin-top: 4%;
+    float: right;
+    font-size: 1.5em;
+    border-radius: 30px;
+    height: 50px;
+    width: 200px;
+    background-color: rgb(187, 118, 84, 0.80);
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.buttone:hover{
+    background-color: rgba(187, 118, 84, 0.65);
+    transition: 0.5s;
+}
+@media screen and
+(max-width: 510px){
+    .articleBox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

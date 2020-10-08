@@ -26,169 +26,31 @@
 .title{
     font-size: 2em;
 }
-/* GM1 ARTICLE ET BOX */
+
 .GM1{
     display: block;
 }
 .GM1.active{
     display: none;
 }
-.GM1GB{
-    display: none;
-}
-.GM1GB.active{
-    display: flex;
-}
-.GM1CG{
-    display: none;
-}
-.GM1CG.active{
-    display: flex;
-}
-
-.GM1WV{
-    display: none;
-}
-.GM1WV.active{
-    display: flex;
-}
-.GM1HG{
-    display: none;
-}
-.GM1HG.active{
-    display: flex;
-}
-/* GM2 ARTICLE ET BOX */
 .GM2{
     display: block;
 }
 .GM2.active{
     display: none;
 }
-.GM2GB{
-    display: none;
-}
-.GM2GB.active{
-    display: flex;
-}
-.GM2CG{
-    display: none;
-}
-.GM2CG.active{
-    display: flex;
-}
-.GM2WV{
-    display: none;
-}
-.GM2WV.active{
-    display: flex;
-}
-.GM2HG{
-    display: none;
-}
-.GM2HG.active{
-    display: flex;
-}
-.GM2R{
-    display: none;
-}
-.GM2R.active{
-    display: flex;
-}
-.GM2P{
-    display: none;
-}
-.GM2P.active{
-    display: flex;
-}
-/* Guerre froide article */
 .GF{
     display: block;
 }
 .GF.active{
     display: none;
 }
-.GFGB{
-    display: none;
-}
-.GFGB.active{
-    display: flex;
-}
-.GFWV{
-    display: none;
-}
-.GFWV.active{
-    display: flex;
-}
-.GFCS{
-    display: none;
-}
-.GFCS.active{
-    display: flex;
-}
-.GFP{
-    display: none;
-}
-.GFP.active{
-    display: flex;
-}
-.GFESP{
-    display: none;
-}
-.GFESP.active{
-    display: flex;
-}
-
-/* world */
 .W{
     display: block;
 }
 .W.active{
     display: none;
 }
-.WEUR{
-    display: none;
-}
-.WEUR.active{
-    display: flex;
-}
-.WASIA{
-    display: none;
-}
-.WASIA.active{
-    display: flex;
-}
-.WOCE{
-    display: none;
-}
-.WOCE.active{
-    display: flex;
-}
-.WORI{
-    display: none;
-}
-.WORI.active{
-    display: flex;
-}
-.WAFRI{
-    display: none;
-}
-.WAFRI.active{
-    display: flex;
-}
-.WUS{
-    display: none;
-}
-.WUS.active{
-    display: flex;
-}
-.WBRE{
-    display: none;
-}
-.WBRE.active{
-    display: flex;
-}
-
 
 
 .img{

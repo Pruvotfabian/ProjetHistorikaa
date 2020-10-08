@@ -11,9 +11,7 @@ export class ArticleViewComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    setTimeout(() => {
-      $('.articleBox').addClass('active');
-    }, 1000);
+
   }
 
 }

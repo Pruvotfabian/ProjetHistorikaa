@@ -6,6 +6,7 @@ import * as $ from 'jquery'
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
+ 
 })
 export class HeaderComponent implements OnInit {
 
@@ -24,6 +25,7 @@ export class HeaderComponent implements OnInit {
         $('.blockMenu').removeClass('active');
       });
       $('.navigation').click(function(){
+        $('.video').addClass('active');
         $('.block').removeClass('active');
         $('.blockMenuClose').removeClass('active');
         $('.blockMenu').removeClass('active');

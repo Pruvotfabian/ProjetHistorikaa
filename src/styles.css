@@ -10,6 +10,19 @@
   width: 100%;
   position: relative;
 }
+.video{
+  z-index: -11;
+  position: absolute;
+  top: 0;
+  min-width: 100%;
+  min-height: 150%;
+  animation: fondu 3s linear;
+}
+.video.active{
+  display: none;
+  right: 0;
+  bottom: 0;
+}
 @keyframes fondu{
     0%{
       opacity: 0;
@@ -18,3 +31,9 @@
         opacity: 1;
     }
   }
+@media screen and
+(max-width: 510px){
+  .video{
+    position: fixed;
+  }
+}
